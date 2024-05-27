@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $itemImage = $_FILES['f_item_image']['name'];
 
     // File upload process here
-    $target_dir = "/uploads";
+    $target_dir = "../uploads/"; // Adjusted file path
     $target_file = $target_dir . basename($_FILES["f_item_image"]["name"]);
 
     if (move_uploaded_file($_FILES["f_item_image"]["tmp_name"], $target_file)) {
