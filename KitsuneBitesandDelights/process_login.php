@@ -31,11 +31,11 @@ if(isset($_POST['f_username'])){
        
         if($row['user_type'] == 'A'){
             //admin
-            header("location: admin");
+            header("location: admin/?manageitems");
         }
         else if($row['user_type'] == 'C'){
             //common user
-            header("location: common_user");
+            header("location: common_user/?page=home");
         }
         else{
             header("location: index.php?error=user_not_found");
