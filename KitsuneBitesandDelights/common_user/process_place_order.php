@@ -38,7 +38,9 @@ if(isset($_POST['f_payment_method'])){
            <input type="text" hidden name="f_alt_address" value="<?php echo $alt_address; ?>" />
            <input type="text" hidden name="f_shipper_id" value="<?php echo $shipper_id; ?>" />
            
-            <div class="mb-3">
+            
+        
+           <div class="mb-3">
                 <label for="" class="form-label">Gcash Reference Number</label>
                 <input type="text" class="form-control" name="f_gcash_ref_num">
             </div>
