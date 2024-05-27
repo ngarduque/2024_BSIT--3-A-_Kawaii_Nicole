@@ -1,4 +1,3 @@
-
 <?php
 if(isset($_GET['cancel_order'])){
     include_once "../db.php";

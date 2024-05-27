@@ -28,8 +28,8 @@ if(isset($_POST['f_payment_method'])){
            
            
            Total Amount to Pay: <b> <?php echo "Php " . number_format($total_amt_to_pay,2); ?> </b> <br>
-           Please pay EXACT AMOUNT to this Gcash Account Number: 09958691376
-           <br>Account Name: KitsuneBites & Delights
+           Please pay EXACT AMOUNT to this Gcash Account Number: 09985518206
+           <br>Account Name: Reymar Llagas
            <hr>
            <input type="text" hidden name="f_total_amt_to_pay" value="<?php echo $total_amt_to_pay; ?>" />
            <input type="text" hidden name="f_payment_method" value="<?php echo $payment_method; ?>" />
@@ -38,9 +38,7 @@ if(isset($_POST['f_payment_method'])){
            <input type="text" hidden name="f_alt_address" value="<?php echo $alt_address; ?>" />
            <input type="text" hidden name="f_shipper_id" value="<?php echo $shipper_id; ?>" />
            
-            
-        
-           <div class="mb-3">
+            <div class="mb-3">
                 <label for="" class="form-label">Gcash Reference Number</label>
                 <input type="text" class="form-control" name="f_gcash_ref_num">
             </div>
