@@ -235,143 +235,138 @@ select.form-control:focus {
   
       
 
-   <a href="?manageitems" class="btn btn-link">Manage Items</a>
-   <a href="?manageorder" class="btn btn-link">Manage Orders</a>
-   <a href="?dashboard" class="btn btn-link">Dashboards</a>
-   <div class="container">
+    <a href="?manageitems" class="btn btn-link">Manage Items</a>
+    <a href="?manageorder" class="btn btn-link">Manage Orders</a>
+    <a href="?dashboard" class="btn btn-link">Dashboards</a>
+    <div class="container">
     
   
       <?php if(isset($_GET['manageitems'])) { ?>
 
         <div class="row">
-           <div class="col-4 bg-success text-light">
-           <?php
-                if(isset($_GET['deactivate_item'])){
-                    $item_id = $_GET['deactivate_item'];
-                    $sql_deactivate_item = "UPDATE `items` SET `item_status`='I' WHERE `items_id`='$item_id'";
-                    mysqli_query($conn, $sql_deactivate_item);
-                }
-
-                if(isset($_GET['update_item'])){
-                    $item_id = $_GET['update_item'];
-                    
-                    $sql_get_item_info = "SELECT * FROM `items` WHERE items_id = '$item_id'";
-                    $result = mysqli_query($conn, $sql_get_item_info);
-                    $data_row = mysqli_fetch_assoc($result);
-                    ?>      
-                <h3 class="display-6">Update Item Info</h3>
-                <form action="process_update_item.php" method="post" enctype="multipart/form-data">
-                    <label for="">Item Name</label>
-                    <input type="text" name="f_item_name" class="form-control mb-3" value="<?php echo $data_row['item_name']; ?>">
-            
-                    <label for="">Item Description</label>
-                    <input type="text" name="f_item_desc" class="form-control mb-3" value="<?php echo $data_row['item_desc']; ?>">
-            
-                    <label for="">Item Price</label>
-                    <input type="text" name="f_item_price" class="form-control mb-3" value="<?php echo $data_row['item_price']; ?>">
-            
-                    <label for="f_item_category">Category</label>
-                    <select name="f_item_category" class="form-control mb-3">
-                        <option value="Appetizers" <?php if($data_row['item_category'] == 'Appetizers') echo 'selected'; ?>>Appetizers</option>
-                        <option value="Sushi and Sashimi" <?php if($data_row['item_category'] == 'Sushi and Sashimi') echo 'selected'; ?>>Sushi and Sashimi</option>
-                        <option value="Ramen and Noodles" <?php if($data_row['item_category'] == 'Ramen and Noodles') echo 'selected'; ?>>Ramen and Noodles</option>
-                        <option value="Donburi Bowls" <?php if($data_row['item_category'] == 'Donburi Bowls') echo 'selected'; ?>>Donburi Bowls</option>
-                        <option value="Japanese Curry" <?php if($data_row['item_category'] == 'Japanese Curry') echo 'selected'; ?>>Japanese Curry</option>
-                        <option value="Yakitori and Kushiyaki" <?php if($data_row['item_category'] == 'Yakitori and Kushiyaki') echo 'selected'; ?>>Yakitori and Kushiyaki</option>
-                        <option value="Hot Pot (Nabe)" <?php if($data_row['item_category'] == 'Hot Pot (Nabe)') echo 'selected'; ?>>Hot Pot (Nabe)</option>
-                        <option value="Desserts" <?php if($data_row['item_category'] == 'Desserts') echo 'selected'; ?>>Desserts</option>
-                        <option value="Beverages" <?php if($data_row['item_category'] == 'Beverages') echo 'selected'; ?>>Beverages</option>
-                    </select>
-
-                    </select>
-            
-                    <label for="itemImage">Item Image</label>
-                    <input type="file" name="f_item_image" class="form-control mb-3" id="itemImage">
-            
-                    <input type="submit" class="btn btn-primary">
-                </form>
-            <?php
-            }
-            ?>
-             
-             
-             
-             <hr>
-              <h3 class="display-6">Add New Item</h3>
-              
-                  <?php 
-                      if(isset($_GET['insert_status'])){
-                          echo "<div class='alert alert-warning'>";
-                              if($_GET['insert_status'] == '1') {
-                                  echo "Item Added Successfully.";
-                              }
-                              else{
-                                  echo "There was an error.";
-                              }
-                          echo "</div>";
-                      }
-                  ?>
-               <form action="process_new_item.php" method="post" enctype="multipart/form-data">
-                    <label for="">Item Name</label>
-                    <input type="text" name="f_item_name" class="form-control mb-3">
-
-                    <label for="">Item Description</label>
-                    <input type="text" name="f_item_desc" class="form-control mb-3">
-
-                    <label for="f_item_category">Category</label>
-                    <select name="f_item_category" class="form-control mb-3">
-                        <option value="Appetizers">Appetizers</option>
-                        <option value="Sushi and Sashimi">Sushi and Sashimi</option>
-                        <option value="Ramen and Noodles">Ramen and Noodles</option>
-                        <option value="Donburi Bowls">Donburi Bowls</option>
-                        <option value="Japanese Curry">Japanese Curry</option>
-                        <option value="Yakitori and Kushiyaki">Yakitori and Kushiyaki</option>
-                        <option value="Hot Pot (Nabe)">Hot Pot (Nabe)</option>
-                        <option value="Desserts">Desserts</option>
-                        <option value="Beverages">Beverages</option>
-                    </select>
-
-                    <label for="">Item Price</label>
-                    <input type="text" name="f_item_price" class="form-control mb-3">
-
-                    <label for="itemImage">Item Image</label>
-                    <input type="file" name="f_item_image" class="form-control mb-3" id="itemImage">
-
-                    <input type="submit" class="btn btn-primary">
-                </form>
-
-           </div>
-           <div class="col-8">
-      
+                <div class="col-4 bg-success text-light">
                         <?php
+                            if(isset($_GET['deactivate_item'])){
+                                $item_id = $_GET['deactivate_item'];
+                                $sql_deactivate_item = "UPDATE `items` SET `item_status`='I' WHERE `items_id`='$item_id'";
+                                mysqli_query($conn, $sql_deactivate_item);
+                            }
+
+                            if(isset($_GET['update_item'])){
+                                $item_id = $_GET['update_item'];
+                                
+                                $sql_get_item_info = "SELECT * FROM `items` WHERE items_id = '$item_id'";
+                                $result = mysqli_query($conn, $sql_get_item_info);
+                                $data_row = mysqli_fetch_assoc($result);
+                                ?>      
+                            <h3 class="display-6">Update Item Info</h3>
+                            <form action="process_update_item.php" method="post" enctype="multipart/form-data">
+                                <label for="">Item Name</label>
+                                <input type="text" name="f_item_name" class="form-control mb-3" value="<?php echo $data_row['item_name']; ?>">
                         
-                        $sql_get_items = "SELECT * FROM `items` WHERE `item_status`='A' order by items_id DESC";
-                        $get_result = mysqli_query($conn, $sql_get_items); ?>
-                        <div class="item-container">
-                <?php while ($row = mysqli_fetch_assoc($get_result)) { ?>
-                    <div class="item" onclick="showDetails(this)">
-                    <img src="../uploads/<?php echo htmlspecialchars($row['item_image']); ?>" alt="" class="item-image">
+                                <label for="">Item Description</label>
+                                <input type="text" name="f_item_desc" class="form-control mb-3" value="<?php echo $data_row['item_desc']; ?>">
+                        
+                                <label for="">Item Price</label>
+                                <input type="text" name="f_item_price" class="form-control mb-3" value="<?php echo $data_row['item_price']; ?>">
+                        
+                                <label for="f_item_category">Category</label>
+                                <select name="f_item_category" class="form-control mb-3">
+                                    <option value="Appetizers" <?php if($data_row['item_category'] == 'Appetizers') echo 'selected'; ?>>Appetizers</option>
+                                    <option value="Sushi and Sashimi" <?php if($data_row['item_category'] == 'Sushi and Sashimi') echo 'selected'; ?>>Sushi and Sashimi</option>
+                                    <option value="Ramen and Noodles" <?php if($data_row['item_category'] == 'Ramen and Noodles') echo 'selected'; ?>>Ramen and Noodles</option>
+                                    <option value="Donburi Bowls" <?php if($data_row['item_category'] == 'Donburi Bowls') echo 'selected'; ?>>Donburi Bowls</option>
+                                    <option value="Japanese Curry" <?php if($data_row['item_category'] == 'Japanese Curry') echo 'selected'; ?>>Japanese Curry</option>
+                                    <option value="Yakitori and Kushiyaki" <?php if($data_row['item_category'] == 'Yakitori and Kushiyaki') echo 'selected'; ?>>Yakitori and Kushiyaki</option>
+                                    <option value="Hot Pot (Nabe)" <?php if($data_row['item_category'] == 'Hot Pot (Nabe)') echo 'selected'; ?>>Hot Pot (Nabe)</option>
+                                    <option value="Desserts" <?php if($data_row['item_category'] == 'Desserts') echo 'selected'; ?>>Desserts</option>
+                                    <option value="Beverages" <?php if($data_row['item_category'] == 'Beverages') echo 'selected'; ?>>Beverages</option>
+                                </select>
 
-                        <div class="item-info">
-                            <h4 class="item-name"><?php echo htmlspecialchars($row['item_name']); ?></h4>
-                            <p class="item-price"><?php echo "Php " . number_format($row['item_price'], 2); ?></p>
-                        </div>
-                        <div class="item-details" style="display: none;">
-                            <p class="item-category"><?php echo htmlspecialchars($row['item_category']); ?></p>
-                            <p class="item-desc"><?php echo htmlspecialchars($row['item_desc']); ?></p>
-                            <a href="index.php?update_item=<?php echo $row['items_id']; ?>" class="btn btn-success">Update</a>
-                            <a href="index.php?deactivate_item=<?php echo $row['items_id']; ?>" class="btn btn-danger">Deactivate</a>
-                        </div>
+                                </select>
+                        
+                                <label for="itemImage">Item Image</label>
+                                <input type="file" name="f_item_image" class="form-control mb-3" id="itemImage">
+                        
+                                <input type="submit" class="btn btn-primary">
+                            </form>
+                        <?php
+                        }
+                        ?>
+                        
+                        
+                        
+                        <hr>
+                        <h3 class="display-6">Add New Item</h3>
+                        
+                            <?php 
+                                if(isset($_GET['insert_status'])){
+                                    echo "<div class='alert alert-warning'>";
+                                        if($_GET['insert_status'] == '1') {
+                                            echo "Item Added Successfully.";
+                                        }
+                                        else{
+                                            echo "There was an error.";
+                                        }
+                                    echo "</div>";
+                                }
+                            ?>
+                        <form action="process_new_item.php" method="post" enctype="multipart/form-data">
+                                <label for="">Item Name</label>
+                                <input type="text" name="f_item_name" class="form-control mb-3">
+
+                                <label for="">Item Description</label>
+                                <input type="text" name="f_item_desc" class="form-control mb-3">
+
+                                <label for="f_item_category">Category</label>
+                                <select name="f_item_category" class="form-control mb-3">
+                                    <option value="Appetizers">Appetizers</option>
+                                    <option value="Sushi and Sashimi">Sushi and Sashimi</option>
+                                    <option value="Ramen and Noodles">Ramen and Noodles</option>
+                                    <option value="Donburi Bowls">Donburi Bowls</option>
+                                    <option value="Japanese Curry">Japanese Curry</option>
+                                    <option value="Yakitori and Kushiyaki">Yakitori and Kushiyaki</option>
+                                    <option value="Hot Pot (Nabe)">Hot Pot (Nabe)</option>
+                                    <option value="Desserts">Desserts</option>
+                                    <option value="Beverages">Beverages</option>
+                                </select>
+
+                                <label for="">Item Price</label>
+                                <input type="text" name="f_item_price" class="form-control mb-3">
+
+                                <label for="itemImage">Item Image</label>
+                                <input type="file" name="f_item_image" class="form-control mb-3" id="itemImage">
+
+                                <input type="submit" class="btn btn-primary">
+                            </form>
+
                     </div>
-                <?php } ?>
-            </div>
 
-               
-           
-               
-           </div>
-       </div>
-   </div>
+                    <div class="col-8">
+                                <?php
+                                $sql_get_items = "SELECT * FROM `items` WHERE `item_status`='A' order by items_id DESC";
+                                $get_result = mysqli_query($conn, $sql_get_items); ?>
+                                <div class="item-container">
+                                <?php while ($row = mysqli_fetch_assoc($get_result)) { ?>
+                                    <div class="item" onclick="showDetails(this)">
+                                        <img src="../uploads/<?php echo htmlspecialchars($row['item_image']); ?>" alt="" class="item-image">
+
+                                        <div class="item-info">
+                                            <h4 class="item-name"><?php echo htmlspecialchars($row['item_name']); ?></h4>
+                                            <p class="item-price"><?php echo "Php " . number_format($row['item_price'], 2); ?></p>
+                                        </div>
+                                        <div class="item-details" style="display: none;">
+                                            <p class="item-category"><?php echo htmlspecialchars($row['item_category']); ?></p>
+                                            <p class="item-desc"><?php echo htmlspecialchars($row['item_desc']); ?></p>
+                                            <a href="index.php?update_item=<?php echo $row['items_id']; ?>" class="btn btn-success">Update</a>
+                                            <a href="index.php?deactivate_item=<?php echo $row['items_id']; ?>" class="btn btn-danger">Deactivate</a>
+                                        </div>
+                                    </div>
+                        <?php } ?>
+                    </div>
+                </div>
+         </div>
+    </div>
 
        <?php } ?>
       
