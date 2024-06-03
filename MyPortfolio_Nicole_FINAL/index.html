@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    
+    <main>
+        <header id="header">
+            <div class="container">
+                <a href="#" class="logo">
+                    <img src="img/melody.png" style="width: 50px;" alt="" class="img-fluid">
+                </a>
+                <ul class="nav_bar">
+                    <li class="nav_bar_item">
+                        <a href="#home" class="nav_link active-link">Home</a>
+                    </li>
+                    <li class="nav_bar_item">
+                        <a href="#about" class="nav_link">About</a>
+                    </li>
+                    <li class="nav_bar_item">
+                        <a href="#resume" class="nav_link">Resume</a>
+                    </li>
+                    <li class="nav_bar_item">
+                        <a href="#portfolio" class="nav_link">Portfolio</a>
+                    </li>
+                    <li class="nav_bar_item">
+                        <a href="#services" class="nav_link">Services</a>
+                    </li>
+                    <li class="nav_bar_item">
+                        <a href="#contact" class="nav_link">Contact</a>
+                    </li>
+                    <ion-icon name="close-circle-outline" class="close_icon"></ion-icon>
+                </ul>
+                <ion-icon name="list-outline" class="toggle_icon"></ion-icon>
+            </div>
+        </header>
+            <!--================home===================-->
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_content">
+                    <h4>Hi there!</h4>
+                    <h3>I'm Nicole Garduque</h3>
+                    <h1>A
+                        <span class="typed" data-typed-items="Designer, Developer, Freelancer"></span>
+                    </h1>
+                    <p>
+                        Enthusiastic software developer who loves coding almost as much as I love coffee,
+                        always eager to tackle tricky bugs and learn the latest tech with a smile.
+                    </p>
+                    <div class="home_social">
+                        <a href="#" class="github"><ion-icon name="logo-github"></ion-icon></a>
+                        <a href="#" class="discord"><ion-icon name="logo-discord"></ion-icon></a>
+                        <a href="#" class="facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#" class="twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#" class="dribble"><ion-icon name="logo-dribbble"></ion-icon></a>
+                    </div>
+                    <a href="#contact" class="btn">
+                        Read More
+                        <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                    </a>
+                </div>
+                <div class="home_img">
+                    <img src="img/nikol.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+            <!--================about===================-->
+        <section class="about section" id="about">
+            <h2 class="section_title">About Me</h2>
+
+            <div class="about_container container grid">
+                <div class="about_img">
+                    <img src="img/melody.png" alt="">
+                </div>
+                <div class="about_content">
+                    <h1>I make Creative and Unique designs</h1>
+                    <p>I craft unique designs that captivate and inspire, drawing from rich experience and a passion for innovation.
+                         My goal is to create visuals that stand out, elevate brands, and engage audiences effectively.</p>
+                         <div class="about_info">
+                            <div>
+                                <span class="number">200</span>
+                                <br>
+                                <span class="text">Completed <br>Projects</span>
+                            </div>
+                            <div>
+                                <span class="number">120</span>
+                                <br>
+                                <span class="text">Positive <br>Reviews</span>
+                            </div>
+                         </div>
+                </div>
+            </div>
+        </section>
+
+            <!--================resume===================-->
+        <section class="resume section" id="resume">
+            <h2 class="section_title">Resume</h2>
+
+            <div class="resume_container container grid">
+                <div class="resume_tabs">
+                    <ul>
+                        <li>
+                            <a href="#page-1" class="current">Education</a>
+                        </li>
+                        <li>
+                            <a href="#page-2">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#page-3">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#page-4">Awards</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="resume_content">
+                    <div id="page-1" class="page one">
+                        <div class="page_heading">Education</div>
+                        <div class="resume_wrap">
+                            <div class="resume_wrap-icon">
+                                <ion-icon name="school-outline"></ion-icon>
+                            </div>
+                            <div class="resume_wrap-content">
+                                <span class="date">2014-2015</span>
+                                <h4>Bachelor of Science in Information Technology</h4>
+                                <span class="position">Bicol University Polangui</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Libero esse consequuntur pariatur nam harum dignissimos quo obcaecati 
+                                accusantium aliquam quis ratione sed reprehenderit, veritatis voluptates natus. 
+                                Placeat officiis perferendis officia.</p>
+                            </div>
+                        </div>
+                        <div class="resume_wrap">
+                            <div class="resume_wrap-icon">
+                                <ion-icon name="school-outline"></ion-icon>
+                            </div>
+                            <div class="resume_wrap-content">
+                                <span class="date">2015-2017</span>
+                                <h4>Multimedia Arts and Design</h4>
+                                <span class="position">Deploma in Multimedia Arts</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Libero esse consequuntur pariatur nam harum dignissimos quo obcaecati 
+                                accusantium aliquam quis ratione sed reprehenderit, veritatis voluptates natus. 
+                                Placeat officiis perferendis officia.</p>
+                            </div>
+                        </div>
+                        <div class="resume_wrap">
+                            <div class="resume_wrap-icon">
+                                <ion-icon name="school-outline"></ion-icon>
+                            </div>
+                            <div class="resume_wrap-content">
+                                <span class="date">2017-2018</span>
+                                <h4>Chuchu</h4>
+                                <span class="position">Anita Max Wynn</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Libero esse consequuntur pariatur nam harum dignissimos quo obcaecati 
+                                accusantium aliquam quis ratione sed reprehenderit, veritatis voluptates natus. 
+                                Placeat officiis perferendis officia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="page-2" class="page two">
+                        <div class="page_heading">Experience</div>
+                        <div class="resume_wrap">
+                            <div class="resume_wrap-icon">
+                                <ion-icon name="briefcase-outline"></ion-icon>
+                            </div>
+                            <div class="resume_wrap-content">
+                                <span class="date">2014-2015</span>
+                                <h4>Software Developer</h4>
+                                <span class="position">Bicol University Polangui</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Libero esse consequuntur pariatur nam harum dignissimos quo obcaecati 
+                                accusantium aliquam quis ratione sed reprehenderit, veritatis voluptates natus. 
+                                Placeat officiis perferendis officia.</p>
+                            </div>
+                        </div>
+                        <div class="resume_wrap">
+                            <div class="resume_wrap-icon">
+                                <ion-icon name="briefcase-outline"></ion-icon>
+                            </div>
+                            <div class="resume_wrap-content">
+                                <span class="date">2015-2017</span>
+                                <h4>UI/UX Designer</h4>
+                                <span class="position">Deploma in Multimedia Arts</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Libero esse consequuntur pariatur nam harum dignissimos quo obcaecati 
+                                accusantium aliquam quis ratione sed reprehenderit, veritatis voluptates natus. 
+                                Placeat officiis perferendis officia.</p>
+                            </div>
+                        </div>
+                        <div class="resume_wrap">
+                            <div class="resume_wrap-icon">
+                                <ion-icon name="briefcase-outline"></ion-icon>
+                            </div>
+                            <div class="resume_wrap-content">
+                                <span class="date">2017-2018</span>
+                                <h4>Web Marketing</h4>
+                                <span class="position">Anita Max Wynn</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Libero esse consequuntur pariatur nam harum dignissimos quo obcaecati 
+                                accusantium aliquam quis ratione sed reprehenderit, veritatis voluptates natus. 
+                                Placeat officiis perferendis officia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="page-3" class="page three">
+                        <div class="page_heading">Skills</div>
+                            <div class="progressBoxs grid">
+                                <div class="progressBox">
+                                    <div class="progress_name">
+                                        <span>HTML</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress_bar" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="progressBox">
+                                    <div class="progress_name">
+                                        <span>CSS</span>
+                                        <span>80%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress_bar" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="progressBox">
+                                    <div class="progress_name">
+                                        <span>Javascript</span>
+                                        <span>70%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress_bar" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                                <div class="progressBox">
+                                    <div class="progress_name">
+                                        <span>Mag Gastos</span>
+                                        <span>85%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress_bar" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="progressBox">
+                                    <div class="progress_name">
+                                        <span>Magtampo</span>
+                                        <span>100%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress_bar" style="width: 100%"></div>
+                                    </div>
+                                </div>
+                                <div class="progressBox">
+                                    <div class="progress_name">
+                                        <span>Magsilos</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress_bar" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="progressBox">
+                                    <div class="progress_name">
+                                        <span>Magutom</span>
+                                        <span>95%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress_bar" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="progressBox">
+                                    <div class="progress_name">
+                                        <span>Matulog</span>
+                                        <span>50%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress_bar" style="width: 50%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div id="page-4" class="page four">
+                        <div class="page_heading">Awards</div>
+                        <div class="resume_wrap">
+                            <div class="resume_wrap-icon">
+                                <ion-icon name="ribbon-outline"></ion-icon>
+                            </div>
+                            <div class="resume_wrap-content">
+                                <span class="date">2014-2015</span>
+                                <h4>Bachelor of Science in Information Technology</h4>
+                                <span class="position">Bicol University Polangui</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Libero esse consequuntur pariatur nam harum dignissimos quo obcaecati 
+                                accusantium aliquam quis ratione sed reprehenderit, veritatis voluptates natus. 
+                                Placeat officiis perferendis officia.</p>
+                            </div>
+                        </div>
+                        <div class="resume_wrap">
+                            <div class="resume_wrap-icon">
+                                <ion-icon name="ribbon-outline"></ion-icon>
+                            </div>
+                            <div class="resume_wrap-content">
+                                <span class="date">2015-2017</span>
+                                <h4>Multimedia Arts and Design</h4>
+                                <span class="position">Deploma in Multimedia Arts</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Libero esse consequuntur pariatur nam harum dignissimos quo obcaecati 
+                                accusantium aliquam quis ratione sed reprehenderit, veritatis voluptates natus. 
+                                Placeat officiis perferendis officia.</p>
+                            </div>
+                        </div>
+                        <div class="resume_wrap">
+                            <div class="resume_wrap-icon">
+                                <ion-icon name="ribbon-outline"></ion-icon>
+                            </div>
+                            <div class="resume_wrap-content">
+                                <span class="date">2017-2018</span>
+                                <h4>Chuchu</h4>
+                                <span class="position">Anita Max Wynn</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Libero esse consequuntur pariatur nam harum dignissimos quo obcaecati 
+                                accusantium aliquam quis ratione sed reprehenderit, veritatis voluptates natus. 
+                                Placeat officiis perferendis officia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <!--================portfolio===================-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section_title">Portfolio</h2>
+
+            <div class="portfolio_container container">
+                <ul class="portfolio_filters">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-app">App</li>
+                    <li data-filter=".filter-card">Card</li>
+                    <li data-filter=".filter-web">Web</li>
+                </ul>
+                <div class="portfolio_wrap-container">
+                    <div class="portfolio_item filter-web">
+                        <div class="portfolio_wrap">
+                            <img src="img/1.png" alt="" class="img-fluid">
+                            <div class="portfolio_info">
+                                <h4>Web 3</h4>
+                                <p>Web</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><ion-icon name="add-circle-outline"></ion-icon></a>
+                                    <a href="#"><ion-icon name="link-outline"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio_item filter-app">
+                        <div class="portfolio_wrap">
+                            <img src="img/2.png" alt="" class="img-fluid">
+                            <div class="portfolio_info">
+                                <h4>App 1</h4>
+                                <p>App</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><ion-icon name="add-circle-outline"></ion-icon></a>
+                                    <a href="#"><ion-icon name="link-outline"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio_item filter-card">
+                        <div class="portfolio_wrap">
+                            <img src="img/red.png" alt="" class="img-fluid">
+                            <div class="portfolio_info">
+                                <h4>Card 2</h4>
+                                <p>Card</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><ion-icon name="add-circle-outline"></ion-icon></a>
+                                    <a href="#"><ion-icon name="link-outline"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio_item filter-web">
+                        <div class="portfolio_wrap">
+                            <img src="img/4.png" alt="" class="img-fluid">
+                            <div class="portfolio_info">
+                                <h4>Web 4</h4>
+                                <p>Web</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><ion-icon name="add-circle-outline"></ion-icon></a>
+                                    <a href="#"><ion-icon name="link-outline"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio_item filter-app">
+                        <div class="portfolio_wrap">
+                            <img src="img/3.png" alt="" class="img-fluid">
+                            <div class="portfolio_info">
+                                <h4>App 3</h4>
+                                <p>App</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><ion-icon name="add-circle-outline"></ion-icon></a>
+                                    <a href="#"><ion-icon name="link-outline"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio_item filter-app">
+                        <div class="portfolio_wrap">
+                            <img src="img/shirt.png" alt="" class="img-fluid">
+                            <div class="portfolio_info">
+                                <h4>Card 5</h4>
+                                <p>Card</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><ion-icon name="add-circle-outline"></ion-icon></a>
+                                    <a href="#"><ion-icon name="link-outline"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <!--================services===================-->
+        <section class="services section" id="services">
+            <h2 class="section_title">Services</h2>
+            <div class="services_container container grid">
+                <div class="services_item">
+                    <ion-icon name="grid-outline"></ion-icon>
+                    <h3 class="services_title">UI/UX <br>Designer</h3>
+                    <span class="services_button">
+                        View More <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                    </span>
+                    <div class="services_modal">
+                        <div>
+                            <ion-icon name="close-circle-outline" class="close_icon"></ion-icon>
+                            <h3 class="services_modal-title">UI/UX Designer</h3>
+                            <p class="services_modal-description">
+                                Services with more than 3 years of experience. 
+                                Providing quality work to clients and companies.
+                            </p>
+                            <ul>
+                                <li>
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                    <p class="services_modal-info">I develop user interfaces.</p>
+                                </li>
+                                <li>
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                    <p class="services_modal-info">Web Page Development.</p>
+                                </li>
+                                <li>
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                    <p class="services_modal-info">Create Unique UI/UX interface.</p>
+                                </li>
+                                <li>
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                    <p class="services_modal-info">I sleep all day and think about nothing.</p>
+                                </li>
+                                <li>
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                    <p class="services_modal-info">Gusto ko mag softdrinks.</p>
+                                </li>
+                                <li>
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                    <p class="services_modal-info">Inaantok na ako.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="services_item">
+                    <ion-icon name="grid-outline"></ion-icon>
+                    <h3 class="services_title">Frontend <br>Developer</h3>
+                    <span class="services_button">
+                        View More <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                    </span>
+                    <div class="services_modal">
+                        <div>
+                            <ion-icon name="close-circle-outline" class="close_icon"></ion-icon>
+                            <h3 class="services_modal-title">Frontend Developer</h3>
+                            <p class="services_modal-description">
+                                Services with more than 3 years of experience. 
+                                Providing quality work to clients and companies.
+                            </p>
+                            <ul>
+                                <li>
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                    <p class="services_modal-info">I develop user interfaces.</p>
+                                </li>
+                                <li>
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                    <p class="services_modal-info">Web Page Development.</p>
+                                </li>
+                                <li>
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                    <p class="services_modal-info">Create Unique UI/UX interface.</p>
+                                </li>
+                                <li>
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                    <p class="services_modal-info">I sleep all day and think about nothing.</p>
+                                </li>
+                                <li>
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                    <p class="services_modal-info">Gusto ko mag softdrinks.</p>
+                                </li>
+                                <li>
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                    <p class="services_modal-info">Inaantok na ako.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="services_item">
+                    <ion-icon name="grid-outline"></ion-icon>
+                    <h3 class="services_title">Mapagmahal <br>Eme</h3>
+                    <span class="services_button">
+                        View More <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                    </span>
+                    <div class="services_modal">
+                        <div>
+                            <ion-icon name="close-circle-outline" class="close_icon"></ion-icon>
+                            <h3 class="services_modal-title">sheeeeshhh</h3>
+                            <p class="services_modal-description">
+                                Services with more than 3 years of experience. 
+                                Providing quality work to clients and companies.
+                            </p>
+                            <ul>
+                                <li>
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                    <p class="services_modal-info">I develop user interfaces.</p>
+                                </li>
+                                <li>
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                    <p class="services_modal-info">Web Page Development.</p>
+                                </li>
+                                <li>
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                    <p class="services_modal-info">Create Unique UI/UX interface.</p>
+                                </li>
+                                <li>
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                    <p class="services_modal-info">I sleep all day and think about nothing.</p>
+                                </li>
+                                <li>
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                    <p class="services_modal-info">Gusto ko mag softdrinks.</p>
+                                </li>
+                                <li>
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                    <p class="services_modal-info">Inaantok na ako.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!--================contact===================-->
+        <section class="contact section" id="contact">
+            <h2 class="section_title">Contact Me</h2>
+
+            <div class="contact_container container">
+                <div class="contact_content">
+                    <div class="inputs">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <input type="password" placeholder="Password">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <a href="#" class="btn">Send Message
+                        <ion-icon name="paper-plane-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </section>
+            <!--================footer===================-->
+        <footer>
+            <div class="footer_bg">
+                <div class="footer_container container">
+                    <div class="main_footer">
+                        <div class="footer_social">
+                            <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-discord"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-dribbble"></ion-icon></a>
+                        </div>
+                        <h3>LineCode</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Maiores autem facilis placeat possimus ab, ipsa explicabo odit 
+                            tempore facere assumenda.</p>
+                    </div>
+                    <div class="footer_copy">&#169; LineCode. All right reserved</div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--=======mixitup===========-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   
+   <!--=========typed js=============-->
+<script>
+        const typed = document.querySelector('.typed');
+
+            if(typed) {
+                let typed_strings = typed.getAttribute('data-typed-items');
+                typed_strings = typed_strings.split(',');
+                new Typed('.typed', {
+                    strings: typed_strings,
+                    loop: true,
+                    typeSpeed: 100,
+                    backSpeed: 50,
+                    backDelay: 2000,
+                });
+            }
+</script>
+
+<!--=======resume==========--> 
+
+<script>
+        const sections = document.querySelectorAll('section[id]');
+
+            function scrollActive() {
+            const scrollY = window.pageYOffset;
+
+        sections.forEach(section => {
+            const sectionHeight = section.offsetHeight;
+            const sectionTop = section.offsetTop - 50;
+
+            let sectionID = section.getAttribute('id');
+
+            if(scrollY > section && scrollY <= scetionTop + sectionHeight) {
+                document.querySelector('.nav_bar a[href *=' + sectionID + ']').classList.add('active-link');
+            } else {
+                document.querySelector('.nav_bar a[href *=' + sectionID + ']').classList.remove('active-link');
+            }
+        })
+    }
+
+window.addEventListener('scroll', scrollActive);
+
+
+
+const pages = document.querySelectorAll('.page');
+const resume = document.querySelector('.resume');
+
+function resumeActive() {
+const scrollY = window.pageYOffset;
+
+pages.forEach(page => {
+    const sectionHeight = page.offsetHeight;
+    const sectionTop = page.offsetTop - 120;
+
+    let sectionId = page.getAttribute('id');
+
+    if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        document.querySelector('.resume_tabs a[href *=' + sectionId + ']').classList.add('current');
+    } else {
+        document.querySelector('.resume_tabs a[href *=' + sectionId + ']').classList.remove('current'); 
+    }
+})
+}
+
+window.addEventListener('scroll', resumeActive);
+</script>
+
+<!--==========portfolio============-->
+<script>
+    let filterItems = document.querySelectorAll('.portfolio_filters li');
+
+function activePortfolio() {
+    filterItems.forEach(el => {
+        el.classList.remove('filter-active');
+        this.classList.add('filter-active');
+    })
+}
+
+filterItems.forEach(el => {
+    el.addEventListener('click', activePortfolio);
+})
+</script>
+
+<!--===========mixitup===========-->
+<script>
+    let mixerPortfolio = mixitup('.portfolio_wrap-container', {
+    selectors: {
+        target: '.portfolio_item'
+    },
+    animation: {
+        duration: 600
+    }
+})
+</script>
+
+<!--=======testimonial swipe effect=========-->
+<script>
+    let swiper = new Swiper(".testimonial_container", {
+        effect: 'slide',
+        loop: true,
+        slidesPerView: 1,
+        grabCursor: true,
+        spaceBetween: 100,
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+            }
+        }
+    });
+</script>
+
+<!--s=======services==========-->
+<script>
+    let modalBtns = document.querySelectorAll('.services_button'),
+        modalViews = document.querySelectorAll(".services_modal"),
+        modalClose = document.querySelectorAll('.close_icon'); // Corrected class name
+
+    let modal = function(modalClick) {
+        modalViews[modalClick].classList.add('active-modal');
+    }
+
+    modalBtns.forEach((modalBtn, i) => {
+        modalBtn.addEventListener('click', () => {
+            modal(i);
+        });
+    });
+
+    modalClose.forEach(el => {
+        el.addEventListener('click', () => {
+            modalViews.forEach(modalView => {
+                modalView.classList.remove('active-modal')
+            })
+        })
+    })
+</script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    
+
+</body>
+</html>
+
+
+
+
